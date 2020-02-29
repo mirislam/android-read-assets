@@ -1,2 +1,2 @@
 # android-read-assets
-Reading files from Assets folder
+Reading files from Assets folder. A step by step guide
