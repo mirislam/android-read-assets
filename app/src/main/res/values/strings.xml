@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Read from Asset</string>
+    <!-- This is just a unique id. Typically based on pkg name -->
+    <string name="file_provider_authority" translatable="false">com.mirislam.readasset.fileprovider</string>
+</resources>
