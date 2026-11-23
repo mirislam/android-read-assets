@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Read from Asset</string>
-    <!-- This is just a unique id. Typically based on pkg name -->
-    <string name="file_provider_authority" translatable="false">com.mirislam.readasset.fileprovider</string>
+    <string name="error_read_assets">Could not read files from assets folder.</string>
+    <string name="error_copy_pdf">Failed to prepare PDF file for viewing.</string>
+    <string name="error_no_pdf_viewer">No PDF viewer app installed on this device.</string>
 </resources>

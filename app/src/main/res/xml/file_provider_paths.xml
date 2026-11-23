@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <paths>
-    <external-path
-        name="external_files" path="." />
+    <!-- Exposes only the pdfs/ subdirectory inside Context.getCacheDir() -->
+    <cache-path
+        name="pdf_cache"
+        path="pdfs/" />
 </paths>

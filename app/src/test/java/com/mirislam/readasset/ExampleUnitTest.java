@@ -2,16 +2,18 @@ package com.mirislam.readasset;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
- * Example local unit test, which will execute on the development machine (host).
- *
- * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
+ * Local unit tests for helper logic in ReadAsset.
  */
 public class ExampleUnitTest {
+
     @Test
-    public void addition_isCorrect() {
-        assertEquals(4, 2 + 2);
+    public void stripPdfExtension_removesOnlyTrailingExtension() {
+        assertEquals("1_doc", MainActivity.stripPdfExtension("1_doc.pdf"));
+        assertEquals("report", MainActivity.stripPdfExtension("report.PDF"));
+        assertEquals("my_pdf_file", MainActivity.stripPdfExtension("my_pdf_file.pdf"));
+        assertEquals("no_extension", MainActivity.stripPdfExtension("no_extension"));
     }
 }
